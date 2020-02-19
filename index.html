@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title></title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <style>
+        .row2 {
+          padding-top: 30px;
+          padding-right: 250px;
+          padding-bottom: 30px;
+          padding-left: 250px;
+        }
+
+        .row1 {
+          background-color: rgb(25,25,25);
+          color: white;
+          padding-top: 30px;
+          padding-right: 250px;
+          padding-bottom: 30px;
+          padding-left: 10px;
+          opacity: 0.9;
+        }
+
+        body {
+          background-image: url('bg_pic.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+
+        #main {
+          background-color: grey;
+          opacity: 0.8;
+          color: white;
+          border-radius: 8px;
+        }
+
+        .button {
+          padding-top: 0px;
+          padding-bottom: 10px;
+        }
+
+        .submit {
+          background-color: black;
+          color: white;
+          border-radius: 12px;
+        }
+
+        #profile {
+          padding-top: 10px;
+        }
+
+      </style>
+  </head>
+  <body>
+    <div class="row1">
+      <div class="col-sm-12">
+        <h1>User Info</h1>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="col-sm-12" id="main">
+        <div class="text-center" id="profile">
+          <h3>Profile Picture</h3>
+          <a href="#"><img src="profile_pic.png" alt="insert profile pic"></a>
+        </div>
+          <br>
+          <label for="inputDescription">Description</label>
+          <input type="text" class="form-control" id="inputDescription">
+          <br>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputLastname">Last Name</label>
+                <input type="text" class="form-control" id="inputLastname">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputFirstname">First Name</label>
+                <input type="text" class="form-control" id="inputFirstname">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputBirthdate">Birthdate</label>
+                <input type="date" class="form-control" id="inputBirthdate">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Email Address</label>
+                <input type="email" class="form-control" id="inputEamil">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Floor/Building/Street">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <select id="inputCity" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputProvince">Province</label>
+                <select id="inputProvince" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div align="center" class="button">
+              <button type="submit" class="submit">Submit</button>
+            </div>
+          </form>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap Javascript Files -->
+    <script type="text/javascript" src="jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+  </body>
+</html>
